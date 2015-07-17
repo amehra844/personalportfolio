@@ -1,100 +1,281 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-<title>My First Webpage</title>
-<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-<style>
 
-body{
-	background-color: #91C4F2;
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-}
- h1{
- 	text-align: center;
- 	margin-top: 100px;
- 	color:#DAF5FF;
- 	font-family: "Gill Sans","Gill Sans MT",Calibri,sans-serif; 
- }
+    <title>My Portfolio</title>
 
-textarea{
-	display: block;
-	margin-right:auto;
-	margin-left:auto;
-	width:400px;
-	height:40px;
-	outline:none;
-	border-radius:5px;
-	border: none;
-	font-size: 15px;
-	color: #616163;
-	font-family: "Gill Sans","Gill Sans MT",Calibri,sans-serif;
-	resize:none;
-	text-align: center;
-}
-button{
-	display:block;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top:20px;
-	width:200px;
-	height:50px;
-	border-radius:8px;
-	outline:none;
-	background-color:#6EA7B2;
-	font-size: 18px;
-	font-family:"Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-	border-color: #91C4F2;
-	color: white;
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 
-}
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
 
-</style>
-	</head>
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
 
-<body>
-<h1>Type a compliment
-<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-</h1>
-<textarea placeholder = "Type a compliment here..."></textarea>
-<button><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-	Send Compliment!
-<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-</button>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Aishwarya Mehra</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Hobbies</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>I Love Music.</h1>
+                <hr>
+                <p>For the entirety of my life, music has served as an outlet where I can express my emotions freely without any judgment. It has also served as somewhat of an experiment, allowing me to test how different rhythms or melodies make people react.</p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Let Me Elaborate</h2>
+                    <hr class="light">
+                    <p class="text-faded">I would like to combine my love for music with my love for neuroscience and study the way music affects human behavior. </p>
+                    <a href="#" class="btn btn-default btn-xl">Learn More About My Passion For Music</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Share My Love For Music</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        
+                        <h3>Bassoon</h3>
+                        <p class="text-muted">Most people have not heard of a Bassoon. It is a woodwind instrument featured in most bands and orchestras alike and sizes up to about 4 feet tall.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        
+                        <h3>Piano</h3>
+                        <p class="text-muted">Some consider it a percussion instrument, others consider it a string instrument, but I consider it to be a hybrid of both.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        
+                        <h3>Violin</h3>
+                        <p class="text-muted">A string instrument that is featured in most orchestras.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <h3>Share The Love</h3>
+                        <p class="text-muted">Start playing an instrument now! Express yourself in ways you were not capable of before.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Music
+                                </div>
+                                <i class="fa fa-1x fa-music wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                                <div class="project-name">
+                                    Piano
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Music
+                                </div>
+                                 <i class="fa fa-1x fa-music wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                                <div class="project-name">
+                                   Violin
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Music
+                                </div>
+                                <i class="fa fa-1x fa-music wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                                <div class="project-name">
+                                    Bassoon
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Music
+                                </div>
+                                <i class="fa fa-1x fa-music wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                                <div class="project-name">
+                                    Other
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Hobbies
+                                </div>
+                                <i class="fa fa-1x fa-road wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                                <div class="project-name">
+                                    Running
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Hobbies
+                                </div>
+                                <i class="fa fa-1x fa-futbol-o wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                                <div class="project-name">
+                                    Soccer
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>Find Out More About My Hobbies And Love For Music!</h2>
+                <a href="#" class="btn btn-primary"><i class="fa fa-4x fa-arrow-down wow text-primary" data-wow-delay=".2s" style = "color:white;"></i></a>
+            </div>
+        </div>
+    </aside>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">More About My Hobbies And My Unparalleled Love For Music</h2>
+                    <hr class="primary">
+                    <p>For as long as I can remember, music has been an integral part of my life in that it seemingly surrounds me wherever I go.My two favorite hobbies are running and playing soccer. My best events in running are the 100 meter dash and the 1600. In soccer my positions are either forward or midfielder. </p>
+                </div>
+               
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
 </body>
 
-<script>
-
-	firebase = new Firebase("https://aishcompliments.firebaseio.com/");
-	firebase.remove();
-
-	firebase.on('child_added', onMessage) ;
-
-	$('button').click(whenClicked) ;
-
-	function whenClicked() {
-		var text;
-		text = $('textarea').val();
-		firebase.push(text);
-		$('textarea').val('Thanks for the compliment!');
-	}
-
-	function onMessage(message){
-		$('h1').text( message.val() );
-
-	}
-
-</script>
-
-
-
 </html>
-
-
-
-
-
-
-
-
